@@ -1,0 +1,143 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, red, white); /* Red & White Gradient Background */
+    color: #333; /* Dark text color for better readability */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ff4d4d; /* Red background for the navbar */
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1, h2 {
+    color: #e60000; /* Red color for headers */
+}
+
+/* Tabs for Products */
+.tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs */
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background-color: #ff4d4d; /* Red background for tabs */
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.tabs button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Active tab styling */
+.tablinks.active {
+    background-color: #e60000; /* Active tab background */
+    color: white;
+}
+
+.tabcontent {
+    display: none;
+    text-align: center;
+}
+
+.tabcontent img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px; /* Round edges of images */
+}
+
+/* Signup Form Styling */
+input[type="text"], input[type="email"], input[type="date"], input[type="password"], 
+button[type="submit"], button[type="button"] {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff4d4d; /* Red button background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+form {
+    width: 80%;
+    max-width: 600px; /* Center the form and restrict max width */
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ff4d4d; /* Red background for footer */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tabs button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

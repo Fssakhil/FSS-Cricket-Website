@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSS-Cricket Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#signup">Signup</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="section">
+        <h1>Welcome to FSS-Cricket Accessories</h1>
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'bats')">Cricket Bats</button>
+            <button class="tablinks" onclick="openTab(event, 'balls')">Cricket Balls</button>
+            <button class="tablinks" onclick="openTab(event, 'accessories')">Cricket Accessories</button>
+        </div>
+
+        <div id="bats" class="tabcontent">
+            <h2>Cricket Bats</h2>
+            <img src="bat.jpg" alt="Cricket Bat">
+            <p>Price: ₹2000</p>
+        </div>
+
+        <div id="balls" class="tabcontent">
+            <h2>Cricket Balls</h2>
+            <img src="ball.jpg" alt="Cricket Ball">
+            <p>Price: ₹1500</p>
+        </div>
+
+        <div id="accessories" class="tabcontent">
+            <h2>Cricket Accessories</h2>
+            <ul>
+                <li>Gloves - ₹800</li>
+                <li>Pads - ₹1000</li>
+                <li>Thai Pad - ₹1200</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <p>We provide high-quality cricket accessories at affordable prices.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="section">
+        <h2>Our Services</h2>
+        <p>We offer delivery services, custom cricket bat designs, and repair services.</p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Phone: 7303012345</p>
+        <p>Email: cricket@gmail.com</p>
+        <p>Address: Dadar, Mumbai 400028</p>
+    </div>
+
+    <!-- Signup Section -->
+    <div id="signup" class="section">
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label>
+                <input type="checkbox" id="authCheck" name="authCheck" required> I'm a Cricket Player
+            </label><br>
+
+            <button type="submit">Signup</button>
+            <button type="button" onclick="goBack()">Back</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
